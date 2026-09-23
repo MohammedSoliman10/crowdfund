@@ -1,0 +1,30 @@
+/* Design tokens — Chicago.95 reference design system (ui-state-contracts.md §5) */
+:root {
+  /* 8/16-color VGA palette */
+  --color-teal: #008080;
+  --color-navy: #000080;
+  --color-silver: #c0c0c0;
+  --color-paper: #ffffff;
+  --color-shadow: #000000;
+  --color-alert-yellow: #ffff00;
+  --color-alert-red: #ff0000;
+  --color-terminal-green: #00ff00;
+  --color-bevel-dark: #808080;
+  --color-bevel-darker: #404040;
+  --color-bevel-light: #dfdfdf;
+
+  /* Bevel grammar: 2px, radius 0 — pressed/hover states invert */
+  --bevel-out: inset -2px -2px 0 0 var(--color-bevel-darker), inset 2px 2px 0 0 var(--color-paper),
+    inset -3px -3px 0 0 var(--color-bevel-dark), inset 3px 3px 0 0 var(--color-bevel-light);
+  --bevel-in: inset 2px 2px 0 0 var(--color-bevel-darker), inset -2px -2px 0 0 var(--color-paper),
+    inset 3px 3px 0 0 var(--color-bevel-dark), inset -3px -3px 0 0 var(--color-bevel-light);
+  --bevel-out-sm: inset -1px -1px 0 0 var(--color-bevel-darker), inset 1px 1px 0 0 var(--color-paper);
+  --bevel-in-sm: inset 1px 1px 0 0 var(--color-bevel-darker), inset -1px -1px 0 0 var(--color-paper);
+
+  /* Typography — pixel display + console faces */
+  --font-console: 'VT323', ui-monospace, 'Courier New', monospace;
+  --font-display: 'Pixelify Sans', 'Silkscreen', 'VT323', sans-serif;
+  --font-pixel: 'Silkscreen', 'Pixelify Sans', 'VT323', sans-serif;
+
+  --radius: 0px;
+}
